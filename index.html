@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Oakenhurst </title>
+
+    <style media="screen" type="text/css">
+      .td_preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 99999;
+      }
+      .td_preloader::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: var(--accent-color);
+        opacity: 0.2;
+      }
+
+      .td_preloader_in {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        display: inline-block;
+        margin: -25px 0 0 -25px;
+        text-indent: -9999em;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        z-index: 3;
+      }
+
+      .td_preloader_in span {
+        background-color: var(--accent-color);
+        display: inline-block;
+        float: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+        border-radius: 50%;
+        -webkit-animation: ballPulseDouble 2s ease-in-out infinite;
+        animation: ballPulseDouble 2s ease-in-out infinite;
+      }
+
+      .td_preloader_in span:last-child {
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+      }
+
+      @-webkit-keyframes ballPulseDouble {
+        0%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes ballPulseDouble {
+        0%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="td_preloader">
+        <div class="td_preloader_in">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
