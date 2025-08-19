@@ -61,8 +61,8 @@ export const Layout = ({
       {children}
 
       {/* footer */}
-      {/* {footer === 1 && <FooterOne />}
-      {footer === 2 && <FooterTwo />}
+      {footer === 1 && <FooterOne />}
+      {/* {footer === 2 && <FooterTwo />}
       {footer === 3 && <FooterThree />}
       {footer === 4 && <FooterFour />}
       {footer === 5 && <FooterFive />}

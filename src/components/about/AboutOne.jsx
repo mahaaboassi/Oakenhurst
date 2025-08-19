@@ -4,6 +4,8 @@ import aboutImg1 from "../../assets/img/page_1.png";
 import aboutImg2 from "../../assets/img/page_2.png";
 import circleText from "../../assets/img/home_1/about_circle_text.svg";
 import { VideoPlayer } from "../videos/VideoPlayer";
+import logo from "../../assets/img/edu_logo.svg"
+
 
 export const AboutOne = () => {
   return (
@@ -18,22 +20,25 @@ export const AboutOne = () => {
               data-wow-delay="0.25s"
             >
               <div className="td_about_thumb_wrap">
-                <div className="td_about_year text-uppercase td_fs_64 td_bold">
+                {/* <div className="td_about_year text-uppercase td_fs_64 td_bold">
                   EST 2025
-                </div>
+                </div> */}
                 <div className="td_about_thumb_1">
                   <img src={aboutImg1} alt="About" />
                 </div>
                 <div className="td_about_thumb_2">
                   <img src={aboutImg2} alt="About" />
                 </div>
-
-                <VideoPlayer
+                <div className="td_circle_text td_center">
+                    <img src={logo} alt="Circle text" className="" />
+                </div>
+                {/* <VideoPlayer
                   trigger={
                     <a
                       href="#vid"
-                      className="td_circle_text td_center td_video_open"
+                      className="td_circle_text td_center"
                     >
+                      
                       <svg
                         width="15"
                         height="19"
@@ -49,7 +54,7 @@ export const AboutOne = () => {
                       <img src={circleText} alt="Circle text" className="" />
                     </a>
                   }
-                />
+                /> */}
 
                 <div className="td_circle_shape" />
               </div>
@@ -61,10 +66,10 @@ export const AboutOne = () => {
             >
               <div className="td_section_heading td_style_1 td_mb_30">
                 <p className="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">
-                  About us
+                  TRANSFORMING
                 </p>
                 <h2 className="td_section_title td_fs_48 mb-0">
-                  The largest & Most Diverse Universities in the United Emirates
+                  Rooted in Tradition, Growing for Tomorrow
                 </h2>
                 <p className="td_section_subtitle td_fs_18 mb-0">
                   At Oakenhurst, we are shaping a tradition of wisdom, strength, and enduring values. We are currently developing a new portfolio of programs designed to prepare students for a rapidly evolving world. Each course is being carefully curated to combine academic depth, practical relevance, and global perspectives.

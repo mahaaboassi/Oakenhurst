@@ -25,7 +25,8 @@ export const HeroOne = () => {
                TRANSFORMATIVE EDUCATION
             </h1>
             <p className="td_hero_subtitle td_fs_18 td_white_color td_opacity_7 td_mb_30">
-              At Oakenhurst, we are shaping a tradition of wisdom, strength, and enduring values. 
+              Wisdom that Endures - Learning that Inspires
+              <br/>Shaping a tradition of wisdom, strength, and enduring values.
             </p>
             {/* <Link
               to="/courses-grid-view"

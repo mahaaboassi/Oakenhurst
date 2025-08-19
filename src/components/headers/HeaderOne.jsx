@@ -7,6 +7,7 @@ import { useMobilemenu } from "../../lib/hooks/useMobilemenu";
 import { useStickyHeader } from "../../lib/hooks/useStickyHeader";
 
 import Logo from "../../assets/img/edu_logo.svg";
+import text_logo from "../../assets/img/text-logo.svg";
 
 export const HeaderOne = () => {
   useMobilemenu();
@@ -25,7 +26,9 @@ export const HeaderOne = () => {
               <div className="td_main_header_left">
                 <Link className="td_site_branding" to="/">
                   <img style={{width:"50px"}} src={Logo} alt="Logo" />
+                 
                 </Link>
+                 <img style={{width:"150px"}} src={text_logo} alt="Logo" />
               </div>
               {/* right */}
               <div className="td_main_header_right">
