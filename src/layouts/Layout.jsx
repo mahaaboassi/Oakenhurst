@@ -46,12 +46,14 @@ export const Layout = ({
       {header === 1 && <HeaderOne />}
       {header === 2 && <HeaderTwo />}
       {header === 3 && <HeaderThree />}
-      {header === 4 && <HeaderFour />}
-      {header === 5 && <HeaderFive />}
+      
+      {/* {header === 4 && <HeaderFour />} */}
+      {/* {header === 5 && <HeaderFive />} */}
       {header === 6 && <HeaderSix />}
       {header === 7 && <HeaderSeven />}
       {header === 8 && <HeaderEight />}
-      {header === 9 && <HeaderNine />}
+      {/* {header === 9 && <HeaderNine />} */}
+      {header === 9 && <HeaderOne />}
 
       {/* breadcrumb */}
       {breadcrumbTitle && (

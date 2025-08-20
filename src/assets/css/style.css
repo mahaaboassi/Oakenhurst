@@ -9146,7 +9146,7 @@ html .ui-button.ui-state-disabled:active {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 33px 0;
+  padding: 20px 0;
   gap: 5px 25px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -14226,6 +14226,10 @@ button.td_icon_btn:hover {
   -webkit-box-shadow: 2px 2px 50px 0px rgba(0, 0, 27, 0.1);
   box-shadow: 2px 2px 50px 0px rgba(0, 0, 27, 0.1);
 }
+/* Error Image */
+.img-error{
+  max-width: 500px;
+}
 @media (max-width: 1400px) {
   .td_card.td_style_6 {
     padding: 25px;
@@ -14417,6 +14421,9 @@ button.td_icon_btn:hover {
 @media (max-width: 575px) {
   .td_features.td_style_1 .td_features_content li:not(:last-child) {
     margin-bottom: 25px;
+  }
+  .img-error{
+    max-width: 100%;
   }
 }
 @media (max-width: 350px) {

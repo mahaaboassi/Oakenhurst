@@ -11,7 +11,7 @@ export const Error = () => {
         <div className="td_height_120 td_height_lg_80" />
         <div className="container">
           <div className="td_error text-center">
-            <img src={errorImg} alt="404 Error" />
+            <img className="img-error"  src={errorImg} alt="404 Error" />
             <div className="td_height_90 td_height_lg_40" />
             <h2 className="td_fs_48 td_mb_27">OOPS! Nothing Was Found</h2>
             <p className="td_mb_35">

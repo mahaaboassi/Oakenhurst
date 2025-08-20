@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useHobble } from "../../lib/hooks/useHobble";
 
-import pageHeadingBg from "../../assets/img/others/page_heading_bg.jpg";
+import pageHeadingBg from "../../assets/img/others/img.png";
 import shape3 from "../../assets/img/others/page_heading_shape_3.svg";
 import shape4 from "../../assets/img/others/page_heading_shape_4.svg";
 import shape5 from "../../assets/img/others/page_heading_shape_5.svg";
@@ -13,7 +13,9 @@ export const Breadcrumb = ({ title, subtitle }) => {
   return (
     <section
       className="td_page_heading td_center td_bg_filed td_heading_bg text-center td_hobble"
-      style={{ backgroundImage: `url(${pageHeadingBg})` }}
+      style={{ backgroundImage: `url(${pageHeadingBg})`,
+              filter:"grayScale(0.3)"
+      }}
     >
       <div className="container">
         <div className="td_page_heading_in">
